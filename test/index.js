@@ -31,13 +31,15 @@ describe('x-request-id -> request.id', function () {
             url: '/'
         };
         let tested = false;
+        let requestInfoId;
         testRequestFunction = (request) => {
             tested = true;
-            expect(request.id).to.be.undefined;
+            requestInfoId = request.info.id;
+            expect(request.id).to.equal(request.info.id);
         };
         let res = await server.inject(requestOptions);
         expect(tested).to.be.true;
-        expect(res.result).to.equal("");
+        expect(res.result).to.equal(requestInfoId);
     });
 
     it('x-request-id passed', async () => {
