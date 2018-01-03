@@ -1,6 +1,6 @@
 {
   "name": "hapi-x-request-id",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "hapi 17 plugin: sets request.id from x-request-id (or custom like x-amzn-trace-id) header",
   "main": "lib/index.js",
   "scripts": {
@@ -9,9 +9,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soxhub/hapi-x-request-id.git"
-  },
-  "engines": {
-    "node": "8.9.1"
   },
   "keywords": [
     "x-request-id",
