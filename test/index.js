@@ -3,7 +3,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 const HapiXRequestId = require('..');
 
 describe('x-request-id -> request.id', function () {

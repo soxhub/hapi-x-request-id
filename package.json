@@ -1,7 +1,7 @@
 {
   "name": "hapi-x-request-id",
-  "version": "1.1.1",
-  "description": "hapi 17 plugin: sets request.id from x-request-id (or custom like x-amzn-trace-id) header",
+  "version": "1.1.2",
+  "description": "hapi 19 plugin: sets request.id from x-request-id (or custom like x-amzn-trace-id) header",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test/index.js"
@@ -26,11 +26,11 @@
   "dependencies": {
   },
   "peerDependencies": {
-    "hapi": "^17.1.1"
+    "@hapi/hapi": "^19.0.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "hapi": "^17.1.1",
-    "mocha": "^4.0.1"
+    "@hapi/hapi": "^19.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.0"
   }
 }
